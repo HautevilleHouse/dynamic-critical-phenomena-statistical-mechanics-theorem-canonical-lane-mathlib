@@ -1,0 +1,20 @@
+import DynamicCriticalPhenomenaStatisticalMechanicsTheoremCanonicalLaneLean.OrderParameterField
+import DynamicCriticalPhenomenaStatisticalMechanicsTheoremCanonicalLaneLean.RenormalizationGroupFlow
+import DynamicCriticalPhenomenaStatisticalMechanicsTheoremCanonicalLaneLean.ScalingLaws
+import DynamicCriticalPhenomenaStatisticalMechanicsTheoremCanonicalLaneLean.CorrelationFunction
+import DynamicCriticalPhenomenaStatisticalMechanicsTheoremCanonicalLaneLean.UniversalityClass
+
+namespace HautevilleHouse
+namespace DynamicCriticalPhenomenaStatisticalMechanicsTheoremCanonicalLaneLean
+
+structure AdmissibleClass where
+  object : UniversalityClass
+  endpointSatisfied : Prop
+  remainderRecorded : Prop
+  gateWitness : endpointSatisfied ∨ remainderRecorded
+
+def admittedClosure (A : AdmissibleClass) : Prop :=
+  UniversalityClassClosed A.object ∧ (A.endpointSatisfied ∨ A.remainderRecorded)
+
+end DynamicCriticalPhenomenaStatisticalMechanicsTheoremCanonicalLaneLean
+end HautevilleHouse

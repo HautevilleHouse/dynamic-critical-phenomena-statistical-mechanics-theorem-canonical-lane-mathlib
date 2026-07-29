@@ -1,0 +1,9 @@
+import dynamic_critical_phenomena_statistical_mechanics_theorem_canonical_lane_mathlib.GateLemmas
+namespace HautevilleHouse
+namespace dynamic_critical_phenomena_statistical_mechanics_theorem_canonical_lane_mathlib
+structure ConstrainedTheoremClosure where
+  admissible :: intro :: constraint :: consequence :: proof ::
+theorem canonical : ConstrainedTheoremClosure :=
+  ConstrainedTheoremClosure.intro
+end dynamic_critical_phenomena_statistical_mechanics_theorem_canonical_lane_mathlib
+end HautevilleHouse
